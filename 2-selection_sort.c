@@ -41,5 +41,5 @@ void selection_sort(int *array, size_t size)
 			swap_fun(array + i, min_num);
 			print_array(array, size);
 		}
-	}	
+	}
 }
