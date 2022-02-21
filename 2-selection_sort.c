@@ -32,10 +32,8 @@ void selection_sort(int *array, size_t size)
 		min_num = array + i;
 
 		for (j = i + 1; j < size; j++)
-		{
-			if (array[j] < *min_num)/* Ternary opretor also possible*/
-				min_num = array + j;
-		}
+			min = (array[j] < *min_num) ? (array + j) : min_num;
+
 		if ((array + i) != min_num)
 		{
 			swap_fun(array + i, min_num);
